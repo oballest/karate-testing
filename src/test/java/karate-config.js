@@ -6,7 +6,7 @@ function fn() {
   }
   var config = {
     env: env,
-    apiurlTest: 'https://10.162.128.63:30000/api/'
+    apiurlTest: karate.properties['api.test.url'] || 'https://10.162.128.63:30000/api/'
   }
   if (env == 'dev') {
     // customize

@@ -23,7 +23,7 @@ Scenario: Prueba exitosa cambio de Simcard fijo
     And request     
     """
         {
-        "phoneNumber": "+582122162063"
+        "phoneNumber": "+584142983173"
         }
         """
     When method Post
