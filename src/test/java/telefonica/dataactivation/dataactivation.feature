@@ -3,9 +3,12 @@ Feature: Pruebas osb-extractdataactivarion
 Background: Variables
     * url apiurlTest
     * configure ssl = { trustAll: true }
+    * configure connectTimeout = 60000
+    * configure readTimeout = 60000
 
 Scenario: Prueba Exitosa cambio de SimCard Movil
     * path '/feature/activate'
+    And header Content-Type = 'application/json'
     And request 
     """
     {
