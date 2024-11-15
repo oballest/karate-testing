@@ -7,11 +7,11 @@ import org.junit.jupiter.api.Test;
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
 
-public class TelefononicaTests {
+public class ExtractDataActivationTests {
     
-     @Test
+    @Test
     void testParallel() {
-        Results results = Runner.path("classpath:telefonica/simswap/SimSwap.feature")
+        Results results = Runner.path("classpath:telefonica/dataactivation/dataactivation.feature")
                 //.outputCucumberJson(true)
                 .parallel(5);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
